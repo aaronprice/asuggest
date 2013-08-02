@@ -16,7 +16,7 @@
 
 (function ($) {
     // workaround for Opera browser
-    if ($.browser.opera) {
+    if (/opera/.test(navigator.userAgent.toLowerCase())) {
         $(document).keypress(function (e) {
             if ($.asuggestFocused) {
                 $.asuggestFocused.focus();
